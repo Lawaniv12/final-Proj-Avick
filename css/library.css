@@ -1,0 +1,265 @@
+/* ============ using grid to desing layour of a website ================== */
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+:root{
+--primary-col: #000F5F;
+--secondary-col: #E1E6FF;
+--primary-white: #ffffff;
+--color-light: hsl(252, 30%, 95%);
+--color-checker: #90D9FD;
+--color-primary: #40A3F8;
+--color-secondary: #9FD1FB;
+--color-tertiary: #F6F8F8;
+--color-black: hsl(252, 30%, 10%);
+--color-dark: hsl(252, 30%, 17%);
+--color-muted: #B7BBBC;
+--color-search: #D7E8EF;
+--color-cal: rgb(243, 235, 216);
+--color-phone: rgb(209, 235, 249);
+--color-sub: #3D3D3FB2;
+--color-cars: #DBE8EE;
+--color-subtitle: #8692A6;
+--color-tertiary: #53acf9;
+}
+.bg-gray {
+  background-color: gray;
+}
+.bg-white {
+  background-color: white;
+}
+.flex {
+  display:flex;
+}
+/* ============== text-Formating with alignment-bold-transformation ============================ */
+.left-align-text {
+  text-align: left;
+}
+.center-align-text {
+  text-align: center;
+}
+.right-align-text {
+  text-align:right;
+}
+.justify-text-align{
+  text-align: justify;
+}
+.end-text-align {
+  text-align:end;
+}
+.start-text-align {
+  text-align:right;
+}
+.bolder {
+  font-weight: bolder;
+}
+.bold {
+  font-weight:bold;
+}
+.bold-2 {
+  font-weight:700;
+}
+.bold-3 {
+  font-weight: 600;
+}
+
+.bold-4 {
+  font-weight: 500;
+}
+.bold-5 {
+  font-weight: 400;
+}
+
+.bold-4 {
+  font-weight: 300;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+/* ========================== text-format ends here ================================== */
+
+/*  ============================= Container alignment ============================= */
+.con-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con-left {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.con-right {
+  display: flex;
+  justify-content: flex-start;
+}
+/* =========================Conatainer alignment Ends Here ================================== */
+
+/* =========================== width Specification starts here =================================== */
+.full-width {
+  width:100%;
+}
+.grp-sec{
+  width: 100%;
+}
+.grp-sec img{
+  width: inherit;
+}
+.section3{
+  background: #f4f4fa;
+}
+.half-width {
+  width: 50%;
+}
+.seventy-width {
+  width: 70%;
+}
+.thirty-width {
+  width:30%;
+}
+/* ======================== width specification ends here ======================================== */
+/* ========================= Container Division ==================================  */
+.gap {
+  gap:2%;
+}
+/* .padding {
+  padding:2%;
+} */
+.h {
+  height:20vh;
+}
+/*  ============================ Layout Desing ================================= */
+.two-equal-div {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.three-equal-div {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.four-equal-div {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.five-equal-div {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.six-equal-div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.side-nav-template {
+  display:grid;
+  grid-template-columns: 15% 83%;
+}
+.side-nav-template2{
+  display: grid;
+  grid-template-columns: 15% 58% 23%;
+}
+.side-nav-template3 {
+  display:grid;
+  grid-template-columns: 28% 70%;
+}
+.side-nav-template4 {
+  display:grid;
+  grid-template-columns: 45% 55%;
+}
+.side-nav-template4-reverse {
+  display:grid;
+  grid-template-columns: 45% 55%;
+}
+.sixty-forty {
+  display:grid;
+  grid-template-columns: 40% 60%;
+}
+.fifty-fifty{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.cta-Section{
+  min-height: 100vh;
+  /* background: linear-gradient(rgba(0, 0, 255, 0.192), rgba(0, 128, 0, 0.007), rgba(113, 113, 255, 0.486), rgba(167, 167, 167, 0.295)); */
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../imgs/contact-us/man-standing-driver-s-seat-using-phone.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*  ======= MEDIA QUEERY IS HERE KEEP YOUR RESPONSIVENESS =============== */
+
+@media (max-width:950px) {
+  
+
+  
+}
+
+@media (max-width:700px) {
+  .four-equal-div {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  .three-equal-div {
+      display:block;
+  }
+}
+@media (max-width:500px) {
+  .side-nav-template4 {
+      display: block;
+  }
+ 
+  .side-nav-template4-reverse {
+      display: block;
+      margin: 2rem 0
+  }
+}
+
+@media (max-width: 56.25rem) {
+  html { font-size: 1.875rem; }
+}
+@media (max-width: 400px) {
+  html { font-size: 14px; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/* @media only screen and (min-width: 1200px) {
+html {font-size: 4rem;}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+html { font-size: 1rem; }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+html {font-size: 0.9375rem}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+html {font-size: 0.875rem;}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+html {font-size: 0.8125rem;}
+.d-flex{
+ display: block;
+}
+
+}
+
+/* Extra extra small devices (smartphones, 400px and down) */
+@media (max-width: 400px) {
+html { font-size: 0.75rem; }
+}

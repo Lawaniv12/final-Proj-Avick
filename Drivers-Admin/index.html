@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avick</title>
+    <script>
+        // if(!sessionStorage.getItem('id')) {
+        //     window.location="../index.html"
+        // }
+        console.log(sessionStorage.getItem("id"))
+    </script>
+
+</head>
+<body>
+    <div class="header pd gap"> 
+        <div class="text-div ">
+            <p class="flex"><span class="font-size smallfont cursor mine ">&#9776;</span> <span class="font-size smallfont cursor flex-2 gap"> Welcome <span class="show" id="riderName2"> ALUGBIN</span> </span> </p>
+                <span class="show text-center white-text"> <span class="flex white-text">Balance: &nbsp; $2.00</span></span>
+            </span>
+         </div>
+         
+         <div class="text-div ">
+            <input type="text" id ="search" placeholder="Your destination !">
+         </div>
+ 
+        <div class=" gap flex">
+            <img src="img/notification3.svg" alt="" srcset="">
+            <img src="img/notification.svg" alt="" srcset="">
+            <img src="img/Avatar.svg" width="50%" class="show" alt="" srcset="">
+        </div>
+    </div>
+    <div class="section fullwidth">
+        <div class="navlist fullwidth full-height">
+            <div class=" profile con-center">
+                <div class="">
+                    <div>
+                        <div class="con-center">
+                            <img src="img/Avatar.svg" class="circle" alt="" srcset="">
+                        </div>
+                        <div>
+                            <span class="white-text flex con-center\" id="riderName">Alugbin Seyi</span>
+                            <span class="flex white-text con-center"> <img src="img/notification1.svg" alt="" srcset=""> &nbsp;&nbsp; $2.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="index.html"> 
+                <div class="full-width">
+                    <div class="flex gap active hover">
+                        <div>
+                            <img src="img/notification4.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Home
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="wallet.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/notification1.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Wallet
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="notification.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/notification3.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Notification
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="history.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/notification2.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            History
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="setting.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/settings.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Settings
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="logout.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/notification.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Logout
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="main pd ">
+            <div class="con-center full-width">
+                <div>
+                    <div class="fullwidth">
+                        <img src="img/Page 1.svg" width="center-car"   alt="" srcset="">
+                    </div>
+                    <div>
+                        <h1 class="text-center"> Welcome! </h1>
+                        <p class="text-center margin" >Request for a drive, pick up a nearby passenger</p>
+                        <p class="text-center margin">Huge passenger network helps you find comforable, safe and cheap ride</p>
+                    </div>
+
+                    <button class="button con-center flex">
+                        <a href="select-driver.html"><span><img src="img/Oval.svg" alt="" srcset=""></span> Connect to passenger </a>
+                    </button>
+                </div>
+                
+            </div>
+            
+            <!-- <div class="cardcontainer fullwidth mg">
+                <div class="fullwidth white radius relative blue-card">
+                    <div class="relative">
+                        <div class="bigDash relative">
+                            <span>23 Messages!</span>
+                        </div>
+                    </div>
+                    <div class="innercard flex-space-between fullwidth"> 
+                        <div class="halfwidth"><span class="smallfont">View Details</span></div>
+                        <div class="halfwidth left-align"><span class="smallfont bold"> > </span></div>
+                    </div>
+                </div>
+
+                <div class="fullwidth white radius relative orange">
+                    <div class="relative">
+                        <div class="bigDash relative">
+                            <span>11 New Tasks!</span>
+                        </div>
+                    </div>
+                    <div class="innercard flex-space-between fullwidth"> 
+                        <div class="halfwidth"><span class="smallfont">View Details</span></div>
+                        <div class="halfwidth left-align"><span class="smallfont bold"> > </span></div>
+                    </div>
+                </div>
+                  
+                <div class="fullwidth white radius relative green">
+                    <div class="relative">
+                        <div class="bigDash relative">
+                            <span>123 New Orders!</span>
+                        </div>
+                    </div>
+                    <div class="innercard flex-space-between fullwidth"> 
+                        <div class="halfwidth"><span class="smallfont">View Details</span></div>
+                        <div class="halfwidth left-align"><span class="smallfont bold"> > </span></div>
+                    </div>
+                </div>
+                
+                <div class="fullwidth white radius relative red">
+                    <div class="relative">
+                        <div class="bigDash relative">
+                            <span>23 New Tricks !</span>
+                        </div>
+                    </div>
+                    <div class="innercard flex-space-between fullwidth"> 
+                        <div class="halfwidth"><span class="smallfont">View Details</span></div>
+                        <div class="halfwidth left-align"><span class="smallfont bold"> > </span></div>
+                    </div>
+                </div>
+
+            </div> -->
+
+            <!-- <div class="dashboard fullwidth pd relative height radius mg">
+                <div class="top fullwidth "> <span class="smallfont white-text"> Your Current Location</span></div>
+                <div class="full-width " id="">
+                    Hello 
+                </div>
+                <div class="bottom fullwidth"><span class="smallfont white-text"> Updated yesterday at 8:30pm</span></div>
+            </div>
+
+            <div class="dashboard fullwidth pd relative height radiusmg">
+                <div class="top fullwidth "> <span class="smallfont white-text"> Table</span></div>
+                <div class="bottom fullwidth"><span class="smallfont white-text"> Updated yesterday at 8:30pm</span></div>
+            </div>
+
+            <div class="footer fullwidth pd">
+                <span class="center-align smallfont">Alright reserved Copyright &copy; 2022</span>
+            </div> -->
+        </div>
+    </div>
+ 
+  <!-- <script>
+          $('#location-button').click(function(){
+        
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position){
+                  console.log(position);
+                  $.get( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+ position.coords.latitude + "," + position.coords.longitude +"&sensor=false", function(data) {
+                    console.log(data);
+                  })
+                  var img = new Image();
+                  img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + position.coords.latitude + "," + position.coords.longitude + "&zoom=13&size=800x400&sensor=false";
+                  $('#output').html(img);
+                });
+                
+            }
+
+          });
+  </script> -->
+    <script src="script.js" type="module"></script>
+</body>
+</html>

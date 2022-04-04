@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avick</title>
+</head>
+<body>
+    <div class="header pd gap"> 
+        <div class="text-div ">
+            <p class="flex"><span class="font-size smallfont cursor mine">&#9776;</span> <span class="font-size smallfont cursor flex-2 gap"> Welcome <span class="show" id="riderName2"> </span> </span> </p>
+                <span class="show text-center white-text"> <span class="flex white-text">Balance: &nbsp; $2.00</span></span>
+            </span>
+         </div>
+         
+         <div class="text-div ">
+            <input type="text" id ="search" placeholder="Your destination !">
+         </div>
+ 
+        <div class=" gap flex">
+            <img src="img/notification3.svg" alt="" class="affect" srcset="">
+            <img src="img/notification.svg" alt="" class="" srcset="">
+            <img src="img/Avatar.svg" width="50%" class="show" alt="" srcset="">
+        </div>
+    </div>
+    <div class="section fullwidth">
+        <div class="navlist fullwidth full-height">
+            <div class=" profile con-center">
+                <div class="">
+                    <div>
+                        <div class="con-center">
+                            <img src="img/Avatar.svg" class="circle" alt="" srcset="">
+                        </div>
+                        <div>
+                            <span class="white-text flex con-center" id="riderName"> </span>
+                            <span class="flex white-text con-center"> <img src="img/notification1.svg" alt="" srcset=""> &nbsp;&nbsp; $2.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="index.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/notification4.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Home
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="wallet.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/notification1.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Wallet
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="notification.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/notification3.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Notification
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="history.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/notification2.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            History
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="setting.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/settings.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Settings
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="logout.html"> 
+                <div class="full-width">
+                    <div class="flex gap hover">
+                        <div>
+                            <img src="img/notification.svg" alt="" srcset="">
+                        </div>
+                        <div class="text-hide">
+                            Logout
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="main pd ">
+            
+            <div class="dashboard fullwidth pd relative radius mg margin-top-bottom">
+                <h4 class="km-info"> 15km away from your next destination </h4>
+                <p class="km-info">Select the nearest taxi around your current location</p> 
+                <p class="red white-text km-info" id="timer"> Time:  </p>
+                <div class="full-width gray margin-top-bottom radius" id="map">
+                    <!-- ========Google Map is here Keep your code ==================== -->
+                </div>
+
+                <div class="">
+                    
+                    <!-- <input type="submi"  placeholder="" value="Connect to driver" class="relative" style="text-align:center,"> -->
+                    <button class="transact-btn con-center full-width green white-text" id="dropbtnReg">
+                        Start Trip
+                    </button>
+                    <button class="transact-btn con-center full-width red white-text" id="end-show">
+                        End Trip
+                    </button>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="login-modal" id="register">
+        <div class="modal-header">
+            <h3> Connect to nearest driver</h3>
+            <span class="close" id="closeReg">&times;</span> 
+        </div>
+        <div class="full-width radius"  id="">
+            <a href="confirm-driver.html">
+            <div class="flex-space-between gap radius pd select-driver">
+                <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">3km away</h4>
+                <button class="white-text transact-btn green"><a href="tel:+2347017909308"> call </a>  </button>
+                <h4 class="flex">Driver 1</h4>
+                 <img src="img/car (2).png" width="10%" alt="" srcset="">
+            </div>
+            </a>
+
+            <a href="confirm-driver.html">
+                <div class="flex-space-between gap radius pd select-driver">
+                    <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">2km away</h4>
+                    <button class="white-text transact-btn green"><a href="tel:+2348164950695"> call </a>  </button>
+                    <h4 class="flex">Driver 1</h4>
+                     <img src="img/car (2).png" width="10%" alt="" srcset="">
+                </div>
+            </a>
+
+    
+            <a href="confirm-driver.html">
+                <div class="flex-space-between gap radius pd select-driver">
+                    <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">4km away</h4>
+                    <button class="white-text transact-btn green"><a href="tel:+2348067055630"> call </a>  </button>
+                    <h4 class="flex">Driver 1</h4>
+                <img src="img/car (2).png" width="10%" alt="" srcset="">
+                </div>
+            </a>
+        </div>
+        
+    </div> -->
+    <script src="script.js" type="module"></script>
+    <script src="app3.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcDZBLLF3v-pRgRw-zm7JvON-F4xVAk5s&callback=initMap"></script>
+
+</body>
+</html>

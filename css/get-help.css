@@ -1,0 +1,255 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+nav a{
+	text-decoration: none;
+	color: #eee;
+}
+
+header{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(/imgs/contact-us/man-standing-driver-s-seat-using-phone.jpg) center no-repeat;
+	background-size: cover;
+  top: 0;
+  overflow: hidden;
+	align-items: center;
+  
+  
+}
+
+.container{
+	max-width: 120rem;
+	width: 100%;
+	margin: 2rem auto;
+  border-radius: 2rem;
+	/* align-items: center; */
+}
+
+.menu-toggle{
+	position: fixed;
+	top: 2.5rem;
+	right: 2.5rem;
+	color: #eeeeee;
+	font-size: 2rem;
+	cursor: pointer;
+	z-index: 1000;
+	display: none;
+}
+
+.title-set{
+	display: none;
+}
+
+nav{
+	padding-top: 0.4rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	font-size: 1rem;
+  position: sticky;
+  top: 0;
+	margin-top: -0.4rem;
+	width: 100%;
+  /* background: #000e5fa8; */
+}
+
+.brand{
+	font-size: 1rem;
+	font-weight: 300;
+	transform: translateX(-100rem);
+	animation: slideIn .5s forwards;
+}
+
+.brand span{
+	color: white;
+}
+
+nav ul{
+	display: flex;
+	margin-left: -1rem;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+nav ul li{
+	list-style: none;
+	transform: translateX(100rem);
+	animation: slideIn .5s forwards;
+	
+}
+
+nav ul li:nth-child(1){
+	animation-delay: 0s;
+}
+
+nav ul li:nth-child(2){
+	animation-delay: .5s;
+}
+
+nav ul li:nth-child(3){
+	animation-delay: 1s;
+}
+
+nav ul li:nth-child(4){
+	animation-delay: 1.5s;
+}
+
+nav ul li a{
+	padding: 1rem 0;
+	/* margin: 0 2rem; */
+	position: relative;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	/* text-align: center; */
+}
+
+nav ul li a:last-child{
+	margin-right: 0;
+}
+#dropbtn{
+	text-transform: uppercase;
+}
+#dropbtnReg{
+	text-transform: uppercase;
+}
+
+/* nav ul li a::before,
+nav ul li a::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: rgb(134, 250, 2);
+	left: 0;
+	transform: scaleX(0);
+	transition: all .5s;
+} */
+
+nav ul li a::before{
+	top: 0;
+	transform-origin: left;
+}
+
+nav ul li a::after{
+	bottom: 0;
+	transform-origin: right;
+}
+
+.overlay{
+	background-color: rgba(0,0,0,.95);
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	transition: opacity 650ms;
+	transform: scale(0);
+	opacity: 0;
+  display: none;
+}
+.btn-secondary{
+  color: var(--primary-col);
+  background: #011badcb;
+  padding: 1rem 2em;
+  border-radius: 2em;
+  border: 0.4px solid var(--primary-col);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid var(--color-primary);
+  outline: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .4);
+  transition: all .4s ease;
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+}
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+	transform: scaleX(1);
+}
+
+@keyframes slideIn {
+	from{
+
+	}
+	to{
+		transform: translateX(0);
+	}
+}
+.btn-nav{
+  color: var(--primary-white);
+  background: #011badcb;
+  padding: 1rem 2em;
+  border-radius: 2em;
+  font-size: 1rem; 
+  border: none;
+}
+
+@media screen and (max-width: 1200px){
+
+  header{
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(/imgs/contact-us/giorgio-trovato-z8dTxA6Uq2o-unsplash.jpg) center no-repeat;
+    position: relative;
+    overflow: hidden;
+    /* background: #000e5fa8; */
+    
+  }
+  .search-location{
+    display: none;
+  }
+	/* .title-set{
+		display: block;
+	} */
+
+	.menu-toggle{
+		display: block;
+  
+	}
+  .fa{
+    border-color: white;
+  }
+	nav{
+		padding-top: 8rem;
+		display: none;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 100vh;
+		text-align: center;
+    
+	}
+
+	nav ul{
+		flex-direction: column;
+	}
+
+	nav ul li{
+		margin-top: 1rem;
+	}
+
+	nav ul li a{
+		margin: 0;
+		font-size: 1rem;
+	}
+
+	.brand{
+		font-size: 1.2rem;
+	}
+  
+  .overlay.menu-open,
+  nav.menu-open{
+	  display: flex;
+	  transform: scale(1);
+	  opacity: 1;
+  }
+  
+}

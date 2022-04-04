@@ -1,0 +1,260 @@
+.pd-top{
+  padding-top: 4rem;
+}
+
+.nav-bar{
+  z-index: 100;
+}
+.future-driver p, h3, span{
+  align-items: center;
+  line-height: 2em;
+}
+
+.future-driver h1{
+  font-size: 4rem;
+  line-height: 1em;
+  margin-bottom: .5em;
+}
+h3{
+  font-size: 1.7rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+.container2{
+  width: 70%;
+  margin: 0 auto;
+ 
+}
+.nice-bg
+{
+  background: #fafaf4;
+  height: 100%;
+  padding-bottom: 2em;
+}
+.phn-Inp{
+  border: none;
+  padding: 1em 5em 1em 1em;
+  background: white;
+  border-radius: 1em;
+  font-size: 1rem;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.3);
+  margin: 1em auto;
+}
+.disp-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  grid-template-rows: 200px;
+  row-gap: 4rem;
+}
+
+.disp-grid > div >img{
+  width: 12.5rem;
+  height: auto;
+}
+
+.disp-grid > div > p{
+  width: 70%;
+}
+
+form span{
+  margin-right: 3em;
+}
+.avick-biz{
+  line-height: 1.5em;
+}
+.avck-city{
+  width: 100%;
+}
+.relative{
+  position: relative;
+  z-index: -1;
+}
+.avck-city img{
+  width: var(--width-100);
+}
+
+.width-half{
+  width: 50%;
+}
+.width-70{
+  width: 70%;
+}
+.width-60{
+  width: 60%;
+}
+.width-90{
+  width: 90%;
+}
+.width-80{
+  width: 80%;
+}
+.width-40{
+  width: 40%
+}
+.width-10{
+  width: 10%;
+}
+.width-full{
+  width: 100%;
+}
+
+.brd-divide{
+  border-right: 0.5px solid rgb(216, 216, 216);
+  margin-right: 4em;
+}
+.faq{
+  align-items: center;
+}
+
+.mrg-btm{
+  margin-bottom: 3.5em;
+}
+.h-mrg-btm{
+  margin-bottom: 1em;
+}
+.iphone{
+  position: absolute;
+  top: 15%;
+  z-index: 2;
+  left: 40%;
+  width: 23%;
+}
+.iphone img{
+  width: 100%;
+}
+.faqs{
+  padding-top: 3rem;
+  margin-top: 10rem;
+}
+.faqs h1{
+  font-size: 2.5rem;
+}
+
+/* .border-demakatn{
+  padding: 1em 0;
+  border-bottom: 1px dotted rgb(78, 78, 78);
+  border-top: 1px dotted rgb(78, 78, 78);
+} */
+
+.ride-form{
+  padding: 1em 0;
+}
+.ride-form label{
+  font-size: 1rem;
+}
+.faq a{
+  font-size: 2rem;
+  color: var(--primary-col);
+}
+.accordion-item{
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    box-shadow: .5rem 2px .5em rgba(0,0,0,0.1);
+    padding: 1em;
+}
+.accordion-link{
+  font-size: 1rem;
+  color: var(--primary-col);
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+
+}
+
+.accordion-link span{
+  padding: .5em;
+}
+.accordion-link .remove{
+  display: none;
+}
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #fafaf4;
+  transition: max-height 650ms;
+}
+
+.answer::before{
+  content: "";
+  position: absolute;
+  width: .6rem;
+  height: 100%;
+  background-color: #0b0da0;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%)
+
+}
+.answer p{
+  font-size: 1.1rem;
+  padding: 2rem;
+  line-height: 1.5em;
+}
+.accordion-item:target .answer{
+  max-height: 20rem;
+}
+.accordion-item:target .accordion-link .add{
+  display: none;
+}
+.accordion-item:target .accordion-link .remove{
+  display: block;
+}
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/* @media only screen and (min-width: 1200px) {
+  html {font-size: 24px;}
+} */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  html { font-size: 24px; }
+} */
+
+/* @media (max-width: 900px) {
+  html { font-size: 16px; }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  /* html {font-size: 1rem} */
+  .disp-grid{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .brd-divide{
+    border-right: none;
+    
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  html {font-size: 0.875rem;}
+} */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* html {font-size: 0.8125rem;} */
+
+  .d-flex{
+    display: block;
+  }
+  
+}
+
+/* Extra extra small devices (smartphones, 400px and down) */
+@media (max-width: 400px) {
+  /* html { font-size: 0.75rem; } */
+  
+}
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/dropdown.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Header DropDown</title>
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" id="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="overlay"></div>
+    <section class="cta-Section">
+      <div class="fifty-fifty">
+          <div class="full-width padding left-hd">
+              <div>
+                  <a href="index.html"><img src="imgs/home-pg/logo whitepn.png" width="30%" alt="" srcset=""></a>
+              </div>
+              <div class="full-width mrg-top margin-left">
+                  <h1 class="let-ride"> Let's Ride </h1>
+                  <h2>Safer, Better Quality and a city at Your Fingertips</h2>
+                  <p>Become a driver and start earning</p>
+                 <a href="html/drivewithAvick.html"> <button class="btn-primary"><p>Apply to drive</p> </button></a>
+                  <!-- <button class="btn-secondary">Sign up to ride</button> -->
+              </div>
+          </div>
+
+          <div class="full-width">
+              <div class="border-opoor padding">
+                          <div class="dropdown">
+                              <button class="dropbtn"><a href="html/drivewithAvick.html">Driver</a></button>
+                              <div class="dropdown-content border-radius">
+                              <a href="../html/driversreg.html">Driver Sign In</a>
+                              <a href="../html/business.html">Business</a>
+                              <a href="../html/riders.html"> Ride with Us</a>
+                              <a href="../drivewithAvick.html">Apply to Drive</a>
+                              </div>
+                          </div> 
+                          <div class="dropdown">
+                              <button class="dropbtn"><a href="html/drivewithAvick.html">For You</a>
+                                </button>
+                              <div class="dropdown-content border-radius">
+                              <a href="#"></a>
+                              <a href="contact-us.html">Contact Us</a>
+                              <a href="aboutUs.html">About Us</a>
+                              <a href="drivewithAvick.html">FAQS</a>
+                              </div>
+                          </div> 
+                         
+                          <button class="dropbtn" id="dropbtn"> Sign in</a></button>
+                          <button class="dropbtn" id="dropbtnReg">Sign up</a></button> 
+                          <a class="none-block" href="html/riders.html">
+                              <button class="btn-white"><small>Get a Ride</small> </button>
+                          </a>
+                          
+                      </div>
+
+                      <!--  ======== Hamburger Button ==============  -->
+                     
+                      
+                 <div class="full-width">
+                      <img src="imgs/" class="low-z-index img-show mrg-top-hd" width="40%" alt="" srcset=""> 
+                 </div>
+              </div>
+          </div>
+      </div>
+  </section>
+            <div class="proudly-9ja">
+              <img src="/imgs/home-pg/proudly nigeria.svg" alt="">
+            </div>
+        </nav>
+    </div>
+</header>
+<script>
+  var open = document.getElementById('hamburger');
+var changeIcon = true;
+
+open.addEventListener("click", function(){
+
+    var overlay = document.querySelector('.overlay');
+    var nav = document.querySelector('nav');
+    var icon = document.querySelector('.menu-toggle i');
+
+    overlay.classList.toggle("menu-open");
+    nav.classList.toggle("menu-open");
+
+    if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+
+        changeIcon = false;
+    }
+    else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+    }
+});
+</script>
+
+
+</body>
+</html>
