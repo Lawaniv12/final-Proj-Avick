@@ -220,7 +220,7 @@ body{
 }
 .center-car {
     width:100%;
-    margin-left:100%;
+    /* margin-left:100%; */
 }
 
 .con-center {
@@ -453,6 +453,9 @@ input:focus{
 .dropdown:hover .dropbtn {
     background-color:var(--primary);
 }
+.con {
+    display:none;
+}
 
 /*  -========= Media Query -================ */
 @media (max-width: 1020px) {
@@ -511,6 +514,9 @@ input:focus{
     .cardcontainer {
         display:block;
     }
+    /* .center-car {
+        display:none;
+    } */
 }
 @media (max-width: 300px) {
     .flex {

@@ -1,3 +1,42 @@
+// auto setting user data 
+let arr2 = []
+arr2.push(
+    {
+        id: "",
+    name : "",
+    email: "",
+    password: "",
+    dob: "",
+    gender:"",
+    phone: "",
+    // bvn : userBvn
+    }
+)
+if(!localStorage.getItem("regDriver")) {
+localStorage.setItem("regDriver", JSON.stringify(arr2))
+}else {
+    console.log("Already set")
+}
+
+let arr = []
+arr.push(
+    {
+        id: "",
+        name : "",
+        email: "",
+        password: "",
+        dob: "",
+        gender:"",
+        phone: ""
+    }
+)
+if(!localStorage.getItem("reg")) {
+localStorage.setItem("reg", JSON.stringify(arr))
+}else {
+    console.log("Already set")
+}
+
+
 let array =['Essential Goods', "Supplies", "Prospects", "People", "Employess"]
 
 // CODE FOR SLIDE SHOW 
@@ -168,9 +207,9 @@ login.addEventListener('click', (e) => {
     let userLogin = document.querySelector("#lusername").value
     let loginPass = document.querySelector("#lpassword").value
     
-     riderDetails.filter((item)=> {
+     riderDetails.some((item)=> {
         if(item.email === userLogin && item.password === loginPass) {
-            sessionStorage.setItem("id", `${item.id}`)
+            localStorage.setItem("id", `${item.id}`)
             let closeErr = document.querySelector('.error')
                 closeErr.style.backgroundColor="green"
                closeErr.style.display="block"
@@ -206,13 +245,11 @@ cl.addEventListener('click', (e)=> {
 })
 // for m registration validation 
 
-
-let arr= []
-
-
 let reg = document.getElementById('submit')
 reg.addEventListener('click', (e)=> {
     e.preventDefault()
+    let arr= JSON.parse(localStorage.getItem('reg'))
+
     let fname = document.getElementById('fname').value
     let lname = document.getElementById('lname').value
     let email = document.getElementById('email').value
@@ -223,16 +260,16 @@ reg.addEventListener('click', (e)=> {
         let erro =document.querySelector("#error2")
         let closeErr = document.querySelector('.error2')
         closeErr.style.display="block"
-             erro.innerHTML = "Incorect login credentials"
+             erro.innerHTML = "None of the input field must be empty"
              document.querySelector('#fname').value=""
              document.querySelector('#lname').value=""
     }else {
-        // let userid  = "r"+ (riderDetails.length + 1)
+        let userid  = "r"+ (arr.length + 1)
         // console.log(userid) 
         let userName = (fname + " " + lname)
         console.log('Hello')
         let data = {
-            id: "r004",
+            id: userid,
             name : userName,
             email: email,
             password: password,

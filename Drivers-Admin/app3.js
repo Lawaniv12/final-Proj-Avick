@@ -59,6 +59,8 @@ countbtn.addEventListener('click', function() {
     }, 1000)
     end.style.display="block";
     countbtn.style.display='none'
+    localStorage.removeItem("connection")
+
 })
 
 end.addEventListener('click', function(){

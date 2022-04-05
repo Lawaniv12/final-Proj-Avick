@@ -73,13 +73,13 @@ function initMap() {
 // app modal desing code 
 //  modal drop down
 // close Event here 
-let closeBtn = document.querySelector('.close')
-let closeBtnReg = document.querySelector('#closeReg')
-let loginModal = document.querySelector('.login-modal')
-let registerModal = document.querySelector('#register')
-closeBtn.addEventListener('click', function(){
-    loginModal.style.top="-1000px";
-})
+// let closeBtn = document.querySelector('.close')
+// let closeBtnReg = document.querySelector('#closeReg')
+// let loginModal = document.querySelector('.login-modal')
+// let registerModal = document.querySelector('#register')
+// closeBtn.addEventListener('click', function(){
+//     loginModal.style.top="-1000px";
+// })
 // Second Close Effect
 // let closeErr = document.querySelector('.error')
 // let smallClose = document.getElementById('cla')
@@ -91,10 +91,37 @@ closeBtn.addEventListener('click', function(){
 // explore.addEventListener('click', function () {
 //     loginModal.style.top="20%";
 // })
- let exploreReg = document.getElementById("dropbtnReg")
- exploreReg.addEventListener('click', function () {
-    registerModal.style.top="20%";
-})
-closeBtnReg.addEventListener('click', function(){
-    registerModal.style.top="-1000px";
-})
+//  let exploreReg = document.getElementById("dropbtnReg")
+//  exploreReg.addEventListener('click', function () {
+//     registerModal.style.top="20%";
+// })
+// closeBtnReg.addEventListener('click', function(){
+//     registerModal.style.top="-1000px";
+// })
+
+let connect = document.querySelector('.con')
+if(!localStorage.getItem('connection')) {
+    
+}else {
+    connect.style.display="block"
+}
+
+function accept() {
+    alert("You've accepted")
+    alert("You will be redirected shortly")
+    let data = JSON.parse(localStorage.getItem('connection'))
+    console.log(data)
+    console.log(data[0]['connet']= true)
+    let reConnect = [
+        {
+            connet:true
+        }
+    ]
+    localStorage.setItem("connection", JSON.stringify(reConnect))
+
+    console.log(data)
+    connect.style.display="none"
+    setInterval(function(){
+        window.location="confirm-driver.html"
+    }, 2000)
+}

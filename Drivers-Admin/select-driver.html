@@ -10,8 +10,8 @@
 <body>
     <div class="header pd gap"> 
         <div class="text-div ">
-            <p class="flex"><span class="font-size smallfont cursor mine">&#9776;</span> <span class="font-size smallfont cursor flex-2 gap"> Welcome <span class="show" id="riderName2"> </span> </span> </p>
-                <span class="show text-center white-text"> <span class="flex white-text">Balance: &nbsp; $2.00</span></span>
+            <p class="flex"><span class="font-size smallfont cursor mine">&#9776;</span> <span class="font-size smallfont cursor flex-2 gap"> <span class="show" id="riderName2"> </span> </span> </p>
+                <span class="show text-center white-text"> <span class="flex white-text">Balance: &nbsp; $0.00</span></span>
             </span>
          </div>
          
@@ -20,8 +20,7 @@
          </div>
  
         <div class=" gap flex">
-            <img src="img/notification3.svg" alt="" class="affect" srcset="">
-            <img src="img/notification.svg" alt="" class="" srcset="">
+            <img src="img/notification3.svg" alt="" srcset="">
             <img src="img/Avatar.svg" width="50%" class="show" alt="" srcset="">
         </div>
     </div>
@@ -126,9 +125,18 @@
             
             <div class="dashboard fullwidth pd relative radius mg margin-top-bottom">
                 <h4 class="km-info">Available Passenger </h4>
-                <a href="confirm-driver.html"><button class="transact-btn con-center full-width white-text green" id="dropbtnReg">
-                    connect to passenger
-                </button></a>
+                <div class="flex-space-between">
+                    <div>
+                        <a href="confirm-driver.html"><button class="transact-btn con-center full-width white-text green" id="dropbtnReg">
+                            Turn on 
+                        </button></a>
+                    </div>
+                    <div class="con">
+                        <button class="transact-btn green white-text" onclick="accept()"> Accept </button>
+                        <button class="transact-btn orange white-text" onclick="decline()"> Decline </button>
+
+                    </div>
+                </div>
                 <p class="km-info"></p> 
                 <div class="full-width gray margin-top-bottom radius" id="map">
                     <!-- ========Google Map is here Keep your code ==================== -->
@@ -136,10 +144,8 @@
 
                 <div class="">
                     
-                    <!-- <input type="submi"  placeholder="" value="Connect to driver" class="relative" style="text-align:center,"> -->
-                    <button class="transact-btn con-center full-width white-text orange" id="dropbtnReg">
-                        Waiting for customer
-                    </button>
+                    <!-- <input type1="submi"  placeholder="" value="Connect to driver" class="relative" style="text-align:center,"> -->
+                    
                     
                 </div>
                 </div>
@@ -147,40 +153,7 @@
         </div>
     </div>
 
-    <div class="login-modal" id="register">
-        <div class="modal-header">
-            <h3> Connect to nearest driver</h3>
-            <span class="close" id="closeReg">&times;</span> 
-        </div>
-        <div class="full-width radius"  id="">
-            <a href="confirm-driver.html">
-            <div class="flex-space-between gap radius pd select-driver">
-                <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">3km away</h4>
-                <button class="white-text transact-btn green"><a href="tel:+2347017909308"> call </a>  </button>
-                <h4 class="flex">Driver 1</h4>
-                 <img src="img/car (2).png" width="10%" alt="" srcset="">
-            </div>
-            </a>
-
-            <a href="confirm-driver.html">
-                <div class="flex-space-between gap radius pd select-driver">
-                    <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">2km away</h4>
-                    <button class="white-text transact-btn green"><a href="tel:+2348164950695"> call </a>  </button>
-                    <h4 class="flex">Driver 1</h4>
-                     <img src="img/car (2).png" width="10%" alt="" srcset="">
-                </div>
-            </a>
-
     
-            <a href="confirm-driver.html">
-                <div class="flex-space-between gap radius pd select-driver">
-                    <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">4km away</h4>
-                    <button class="white-text transact-btn green"><a href="tel:+2348067055630"> call </a>  </button>
-                    <h4 class="flex">Driver 1</h4>
-                <img src="img/car (2).png" width="10%" alt="" srcset="">
-                </div>
-            </a>
-        </div>
         
     </div>
     <script src="script.js" type="module"></script>

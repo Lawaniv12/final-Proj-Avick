@@ -1,8 +1,10 @@
 import { riderTrips } from "./db.js";
 import { RiderTransaction } from "./db.js";
 
-let userId = sessionStorage.getItem('id')
-RiderTransaction.filter((item)=>{
+let userWallet = JSON.parse(localStorage.getItem("wallet"))
+
+let userId = localStorage.getItem('id')
+userWallet.filter((item)=>{
     if(item.id === userId) {
         if(item.isSuccess === true) {
             document.getElementById('history').innerHTML +=`

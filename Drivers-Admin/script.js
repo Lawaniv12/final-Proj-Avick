@@ -1,7 +1,9 @@
-import { Driver } from "./db.js";
-let userId = sessionStorage.getItem("id")
+// import { Driver } from "./db.js";
+let userId = localStorage.getItem("dId")
+let driver = JSON.parse(localStorage.getItem("regDriver"))
 
-Driver.filter((item)=> {
+
+driver.filter((item)=> {
     if(item.id === userId) {
         document.getElementById('riderName').innerHTML = item.name;
         document.getElementById('riderName2').innerHTML = item.name;

@@ -9,3 +9,17 @@ function initMap() {
         map:map,
     })
 }
+
+// getting the next destination value from the user js oppor fun warisi
+
+let saveBtn = document.getElementById("changeLocation")
+saveBtn.addEventListener('click', e => {
+    e.preventDefault()
+    
+    if(document.getElementById("location").value === '') {
+        alert("Please let know your next destination before")
+    }else {
+        localStorage.setItem("location", document.getElementById("location").value)
+        window.location="select-driver.html"
+    }
+})

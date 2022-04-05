@@ -59,6 +59,16 @@ function initMap() {
             sessionStorage.setItem("distance", distance.toFixed(2))         
 }
 
+// connection building between the driver and the riders 
+
+// accessing the div to pop if the connection is successfull
+let div = document.querySelector('#confirmData')
+let dataCheck = JSON.parse(localStorage.getItem("connection"))
+console.log(dataCheck)
+console.log(dataCheck[0]["connet"])
+if(dataCheck[0]["connet"] === true) {
+    div.style.display="block"
+}
 
 // using a function for count down function and timing function 
 let countbtn = document.getElementById('dropbtnReg')
@@ -73,6 +83,7 @@ countbtn.addEventListener('click', function() {
     }, 1000)
     end.style.display="block";
     countbtn.style.display='none'
+    localStorage.removeItem("connection")
 })
 
 end.addEventListener('click', function(){
@@ -84,6 +95,7 @@ end.addEventListener('click', function(){
     },1000)
     
 })
+
 // // app modal desing code 
 // //  modal drop down
 // // close Event here 

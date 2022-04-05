@@ -10,8 +10,8 @@
 <body>
     <div class="header pd gap"> 
         <div class="text-div ">
-            <p class="flex"><span class="font-size smallfont cursor mine">&#9776;</span> <span class="font-size smallfont cursor flex-2 gap"> Welcome <span class="show" id="riderName2"> ALUGBIN</span> </span> </p>
-                <span class="show text-center white-text"> <span class="flex white-text">Balance: &nbsp; $2.00</span></span>
+            <p class="flex"><span class="font-size smallfont cursor mine">&#9776;</span> <span class="font-size smallfont cursor flex-2 gap"> <span class="show" id="riderName2"> ALUGBIN</span> </span> </p>
+                <span class="show text-center white-text"> <span class="flex white-text">Balance: &nbsp; $0.00</span></span>
             </span>
          </div>
          
@@ -21,7 +21,6 @@
  
         <div class=" gap flex">
             <img src="img/notification3.svg" alt="" srcset="">
-            <img src="img/notification.svg" alt="" srcset="">
             <img src="img/Avatar.svg" width="50%" class="show" alt="" srcset="">
         </div>
     </div>
@@ -35,7 +34,7 @@
                         </div>
                         <div>
                             <span class="white-text flex con-center" id="riderName"></span>
-                            <span class="flex white-text con-center"> <img src="img/notification1.svg" alt="" srcset=""> &nbsp;&nbsp; $2.00</span>
+                            <span class="flex white-text con-center"> <img src="img/notification1.svg" alt="" srcset=""> &nbsp;&nbsp; $0.00</span>
                         </div>
                     </div>
                 </div>
@@ -128,11 +127,11 @@
                     <div class=" full-width pd radius">
                         <div class="flex-space-between gray pd radius">
                             <p> Name </p>
-                            <p> Alugbin Oluwaseyi </p> 
+                            <p id="name"></p> 
                         </div>
                         <div class="flex-space-between gray pd radius">
                             <p> Email </p>
-                            <p> alugbin@gmail.com </p> 
+                            <p id="email"></p> 
                         </div>
                         <div class="flex-space-between gray pd radius">
                             <p> Gender</p>
@@ -140,15 +139,15 @@
                         </div>
                         <div class="flex-space-between gray pd radius">
                             <p> Birthday</p>
-                            <p> April, 16 1009</p> 
+                            <p id="dob"></p> 
                         </div>
                         <div class="flex-space-between gray pd radius">
                             <p> Phone</p>
-                            <p> 08164950695</p> 
+                            <p id="phone"></p> 
                         </div>
                         <div class="flex-space-between margin-top-bottom gray pd radius">
-                            <p> Gender</p>
-                            <p> Male </p> 
+                            <p> Level</p>
+                            <p> Level 1</p> 
                         </div>
                     </div>
                 </div>
@@ -228,6 +227,7 @@
           "<br>Longitude: " + position.coords.longitude;
         }
         </script>
-    <script src="js/script.js" type="module"></script>
+    <script src="script.js" type=""></script>
+    <script src="setting.js"></script>
 </body>
 </html>

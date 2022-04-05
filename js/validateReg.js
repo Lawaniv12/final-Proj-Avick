@@ -1,4 +1,21 @@
-
+let arr = []
+arr.push(
+    {
+        id: "",
+    name : "",
+    email: "",
+    password: "",
+    dob: "",
+    gender:"",
+    phone: "",
+    // bvn : userBvn
+    }
+)
+if(!localStorage.getItem("regDriver")) {
+localStorage.setItem("regDriver", JSON.stringify(arr))
+}else {
+    console.log("Already set")
+}
 // creating a users login for getting users data from localsgitrafe
 let login = document.querySelector('#lsubmit')
 let driver = JSON.parse(localStorage.getItem("regDriver"))
@@ -8,17 +25,18 @@ login.addEventListener('click', (e) => {
     let userLogin = document.querySelector("#lusername").value
     let loginPass = document.querySelector("#lpassword").value
     
-     driver.filter((item)=> {
+     driver.some((item)=> {
         if(item.email === userLogin && item.password === loginPass) {
             
-                 alert("You will be redirect shortly")
-               setInterval(()=>{
-                  window.location="Drivers-Admin/index.html"
-                 }, 3000)
-    
+                //  alert("You will be redirect shortly")
+                let id = item.id
+                 localStorage.setItem('dId', id)
                document.querySelector('#lusername').value=""
                  document.querySelector('#lpassword').value=""
     
+               setInterval(()=>{
+                  window.location="../Drivers-Admin/index.html"
+                 }, 3000)
     
             }else {
                 alert("Incorrect login details !")
@@ -33,17 +51,19 @@ login.addEventListener('click', (e) => {
 
 
 
-let arr= []
-let reg = document.getElementById('btn')
+let reg = document.getElementById('reg')
 reg.addEventListener('click', (e)=> {
     e.preventDefault()
+  
+    let arr = JSON.parse(localStorage.getItem("regDriver"))
     let fname = document.getElementById('fname').value
     let lname = document.getElementById('lname').value
     let email = document.getElementById('email').value
-    let username = document.getElementById('username').value
+    let username = document.getElementById('Dlicense').value
     let password = document.getElementById('password').value
+    let bvn = document.getElementById('bvn').value;
 
-    if(fname === "" || lname ==="" || email==="" || username ==="" || password === "") {
+    if(fname === "" || lname ==="" || email==="" || username ==="" || password === "" || bvn === "") {
         // let erro =document.querySelector("#error2")
         // let closeErr = document.querySelector('.error2')
         // closeErr.style.display="block"
@@ -52,19 +72,20 @@ reg.addEventListener('click', (e)=> {
         //      document.querySelector('#lname').value=""
         alert("Please non of the input field must be empty")
     }else {
-        // let userid  = "r"+ (Rider.length + 1)
+        let userid  = "r"+ (arr.length + 1)
         // console.log(userid) 
         
         console.log('Hello')
         let userName = fname + " " +lname;
         let data = {
-            id: "r003",
+            id: userid,
             name : userName,
             email: email,
             password: password,
             dob: "June 12 1990",
             gender:"male",
-            phone: "08164950695"
+            phone: "08164950695",
+            // bvn : userBvn
         }
         arr.push(data)
         // Rider.push(data)

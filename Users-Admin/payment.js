@@ -10,3 +10,4 @@ document.getElementById('km').innerHTML = `${distance}mi`
 let amount = (+distance * 20) + time  
 console.log(amount)
 document.getElementById("amount").innerHTML = ` Amount : $ ${amount}`
+sessionStorage.setItem('amount', amount)

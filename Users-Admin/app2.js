@@ -132,3 +132,14 @@ closeBtn.addEventListener('click', function(){
 closeBtnReg.addEventListener('click', function(){
     registerModal.style.top="-1000px";
 })
+
+function connect(){
+    let soroSoke = {
+        connet : false 
+    }
+    arr = []
+    arr.push(soroSoke)
+    localStorage.setItem("connection", JSON.stringify(arr))
+    alert("You have successfully connect to the driver wait for confirmation")
+    window.location="confirm-driver.html"
+}

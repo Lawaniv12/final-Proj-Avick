@@ -341,6 +341,7 @@ img{
     transition: all .4s ease;
     letter-spacing: 1px;
     
+    
   }
   /* .btn-white a{
     color: white;
@@ -386,12 +387,13 @@ img{
   
   
   .btn-primary:hover{
-    color: var(--primary-col);
-    background: var(--secondary-col);
+    /* color: var(--primary-col); */
+    background: var(--color-tertiary);
     border: 0.4px solid var(--primary-col);
     box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .6);
-    background: var(--primary-col);
+    /* background: var(--primary-col); */
     color: white;
+    transition-duration: 1s;
     
   }
   .btn-secondary:hover{
