@@ -17,7 +17,6 @@
     .contact {
           padding: 5rem 4rem;
           width: 100%;
-          z-index: -1;
         
       }
   
@@ -28,6 +27,10 @@
           justify-content: center;
           border-radius: 10px;
           box-shadow: 0 0 3rem rgba(0, 0, 0, 0.9);
+          display: flex;
+            justify-content: space-between;
+            flex-flow: row;
+            gap: 1rem;
       }
   
       .left {
@@ -39,12 +42,12 @@
       }
   
       .right {
-          /* background-color: #ffffff; */
+          background-color: #ffffff;
           width: 100%;
           border-top-right-radius: 10px;
           border-bottom-right-radius: 10px;
-          position: relative;
-        
+          /* position: relative;
+          z-index: -1; */
       }
   
     
@@ -99,17 +102,18 @@
       }
   
       .input {
-          width: 98%;
+          width: 100%;
           outline: none;
           border: 1px solid var(--secondary-col);
           background-color: #fff;
           height: 3rem;
           font-size: 1rem;
-          border-radius: 1000px;
+          border-radius: 2rem;
           text-indent: 5px;
           box-shadow: 0 0 1rem rgba(0, 0, 0, .2);
-          padding: 2em;
+          padding: 2rem 2em;
           transition: all .4s ease;
+          z-index: -1;
       }
   
       .input:focus {
@@ -159,9 +163,83 @@
           flex-direction: column;
           align-items: center;
           justify-content: space-evenly;
+
       }
+
+@media only screen and (max-width: 600px) {
+  html {font-size: 14px;}
+  .contact-content {
+   flex-direction: column;
+   width: 100%;
+  }
+  .contact {
+          padding: 2rem 0;
+          width: 100%;
+          margin: 0 auto;
+          justify-content: center;
+          text-align: center;
+      }
+      .maps-title{
+    margin: 2em;
+}
+.talk-to-sales{
+    width: 70%;
+    margin: 1em auto;
+  }
+  .reg-form input{
+      max-width: 100%;
+  }
+}
+  
+
+
+/* Extra extra small devices (smartphones, 400px and down) */
+@media (max-width: 400px) {
+  html { font-size: 12px; }
+  .contact-content{
+    flex-direction: column;
+    width: 100%;
+   }
+   .talk-to-sales{
+    width: 90%;
+    margin: 1em auto;
+  }
+  .contact {
+          padding: 2rem 0;
+          width: 100%;
+          margin: 0 auto;
+          justify-content: center;
+          text-align: center;
+      }
+.contact-heading{
+    margin: 1rem auto;
+}
+.maps-title{
+    margin: 2em;
+}
+.reg-form input{
+      max-width: 100%;
+  }
+
+}
+@media (max-width: 320px) {
+  html { font-size: 12px; }
+  .d-flex{
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+   }
+   .talk-to-sales{
+    width: 70%;
+    margin: 1em auto;
+  }
+  .reg-form input{
+      max-width: 100%;
+  }
+}
+
   </style>
-<body>
+  <body>
     <header>
       <div class="menu-toggle" id = "hamburger">
           <i class="fas fa-bars"></i>
@@ -169,8 +247,7 @@
       <div class="overlay"></div>
       <div class="container">
           <nav>
-            <h1 class="brand"><a href="/index.html"> <img src="/imgs/home-pg/logo whitepn.png" alt="" width="50%" style="margin-left: 4rem;"> </a></h1>
-               
+            <h1 class="brand"><a href="../index.html"> <img src="../imgs/home-pg/logo whitepn.png" alt="" width="50%" style="margin-left: 4rem;"> </a></h1>
                 
                 <ul>
                   <li><a href="drivewithAvick.html">Driver</a></li>
@@ -180,13 +257,13 @@
                   <li><a href="contact-us.html#talk2sales">Talk to Us</a></li>
               </ul>
               <div class="proudly-9ja">
-                <img src="/imgs/home-pg/proudly nigeria.svg" alt="" style="margin-right: 3rem;">
+                <img src="../imgs/home-pg/proudly nigeria.svg" alt="" style="margin-right: 3rem;">
               </div>
           </nav>
       </div>
   </header>
   <section class="contact">
-    <div class="contact-content d-flex">
+    <div class="contact-content">
         <div class="left">
             <div class="contact-info">
                 <h1 class="maps-title">Find Us on Google Maps</h1>
@@ -199,22 +276,27 @@
             
             <div class="contact-form" id="driver's-login">
                 <form class="form">
-                    <div class="contact-heading">Hey, Welcome Back</div>
+                    <div>
+
+                        <div class="contact-heading">Hey, Welcome Back</div>
                     <div class="form-group">
-                        <input type="text" class="input" id="name" placeholder="Name" required>
+                        <input type="text" class="input" id="lusername" placeholder="Name" required>
                         <label for="name">Name</label>
                     </div>
+                    
                     <div class="form-group">
-                        <input type="email" class="input" id="email" placeholder="Email" required>
+                        <input type="email" class="input" id="lpassword" placeholder="Email" required>
                         <label for="email">Email</label>
+                    </div>
+
                     </div>
                     
                     <!-- <div class="form-group">
                         <textarea type="text" class="input textarea" placeholder="message..." required></textarea>
                         <label for="">Message</label>
                     </div> -->
-                    <a href="#" class="contact-btn">Login</a> <br> <br>
-                    Don't have an account? <a href="./driversreg.html#driver's-Reg">Register Here</a>
+                    <a href="#" class="contact-btn" id="lsubmit">Login</a> <br> <br>
+                    Don't have an account? <a href="driversreg.html#driver's-Reg">Register Here</a>
                 </form>
             </div>
         </div>
@@ -223,34 +305,57 @@
   </section>
   
     <div class="form-section" id="driver's-Reg">
-      <div class="talk-to-sales">
+      <div class="talk-to-sales reg-form">
         <h2>Driver Registration</h2>
-          <form action="" class="form">
+          <form  class="form">
             <div class="">
-              <input type="first Name" placeholder="first Name*" required>
-              <input type="last Name" placeholder="last Name*" required>
+              <input type="first Name" placeholder="first Name*" id="fname" required>
+              <input type="last Name" placeholder="last Name*" id="lname" required>
             </div>
             <div>
-              <input type="Phone Number" name="" id="" placeholder="Phone Number*" required>
-              <input type="Email Address" placeholder="Email Address*">
+              <input type="Phone Number" name="" id="phone" placeholder="Phone Number*" required>
+              <input type="Email Address" placeholder="Email Address*" id="email">
             </div>
             <div>
-              <input type="Company Name" name="" id="" placeholder="Company Name*" required>
-              <input type="Job Title" name="" id="" placeholder="Job Title*" required>
+              <input type="password" name="" id="password" placeholder="Password*" required>
+              <input type="Job Title" name="" placeholder="Job Title*" required>
             </div>
             <div>
-              <input type="Company Size" name="" id="" placeholder="Company Size*" required>
-              <input type="Industry" name="" id="" placeholder="Industry*" required>
+              <input type="Company Size" name="" placeholder="Company Size*" required>
+              <input type="Industry" name=""  placeholder="Industry*" required>
+            </div>
+            <div>
+                <input type="Company Size" name="" id="Dlicense" placeholder="Driver's License*" required>
+                <input type="Industry" name="" placeholder="Criminal Record*" required>
+            </div>
+            <div>
+                <input type="Company Size" name=""  placeholder="Health Record*" required>
+                <input type="Industry" name=""  placeholder="Physical Fitness*" required>
+            </div>
+            <div>
+                <input type="Company Size" name=""  placeholder="Health Record*" required>
+                <input type="Industry" name=""  placeholder="Eye Test*" required>
+            </div>
+            <div>
+                <input type="number" name=""  placeholder="Account Number*" required>
+                <input type="number" name="" id="bvn" placeholder="BVN*" required>
+            </div>
+            <div>
+                <label for="file">Upload Your Picture: </label>
+                <input type="file" name=""  placeholder="Upload Picture*" class="btn-white" required style="border:none; padding: 1rem 2rem; width: 50%;">
+               
+                <!-- <input type="Industry" name="" id="" placeholder="Bank Verification Number*" required> -->
             </div>
             <div>
   
           </div>
-          <button class="btn-secondary g-i-t">Register</button>
+          <button class="btn-secondary g-i-t" id ="reg">Register</button>
         </form>
       </div>
     </div>
-    <script src="/js/nav.js">
+    <script src="../js/nav.js">
      
     </script> 
+    <script src="../js/validateReg.js"></script>
   </body>
 </html>

@@ -279,7 +279,6 @@ img{
     border: 0.01rem solid var(--primary-col);
     border-radius: .5em;
     margin-top: .5em;
-  
   }
   .logo{
     display: block;
@@ -438,13 +437,13 @@ img{
   }
 
   .talk-to-sales{
-    width: 70%;
+    width: 50%;
     margin: 1em auto;
   }
   .talk-to-sales form{
     width: 100%;
   }
-
+ 
   .form-section textarea{
     resize: none;
     font-family: 'muli';
@@ -452,7 +451,7 @@ img{
     margin-top: 1rem;
     border-radius: .5em;
     border: none;
-    width: 84%;
+    width: 97%;
   }
 
   .form{
@@ -471,7 +470,10 @@ img{
     }
   } */
   @media (max-width: 900px) {
-    html { font-size: 14px; }
+    html { font-size: 14px;}
+    body{
+      overflow: none;
+    }
     .grid-2 {
       grid-template-columns: 1fr;
       align-items: center;
@@ -496,8 +498,24 @@ img{
     .search-location{
       display: none;
     }
+    .form input{
+      width: 100%;
+    }
+    .form-section input{
+      border: none;
+      color: var(--color-muted);
+      padding: .9rem 1rem .9rem 1rem;
+      border-radius: .4em;
+      font-family: 'muli';
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
+      
+  
+    }
+  
     
-  }
+  
   @media (max-width: 400px) {
     html { font-size: 12px; }
     .grid-2{
@@ -512,6 +530,9 @@ img{
     .talk-to-sales{
       width: 70%;
       margin: 1em auto;
+    }
+    body{
+      overflow: none;
     }
   
   }

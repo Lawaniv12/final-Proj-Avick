@@ -32,6 +32,7 @@
 }
 .flex {
   display:flex;
+  gap: 0.4rem;
 }
 /* ============== text-Formating with alignment-bold-transformation ============================ */
 .left-align-text {

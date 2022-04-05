@@ -117,6 +117,17 @@ width: 100%;
 .d-flex{
   display: flex;
   justify-content: space-between;
+  
+}
+.inYour-City{
+  width: 100%;
+  margin: 0 auto;
+  color: var(--primary-col);
+  background-color: #EEEEEE;
+
+}
+.inYour-City img{
+  width: 100%;
 }
 .mrg-top{
   margin-top: 3em;
@@ -238,12 +249,13 @@ li{
 .dropbtn {
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
-  margin: 1rem;
+  margin-right: 1rem;
   border-radius: 5px;
   background:transparent;
+  font-family: 'Muli', sans-serif;
 }
 .dropbtn a {
   color:white;
@@ -472,6 +484,8 @@ input:focus{
   }
   .flex {
       flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
   }
   .three-equal-div {
       display:block;
