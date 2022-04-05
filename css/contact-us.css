@@ -17,6 +17,7 @@ font-family: 'Nunito', sans-serif;
 font-family: 'Muli', sans-serif;
 }
 
+
 html {
   font-size: 16px;
 }
@@ -200,6 +201,7 @@ img{
   }
   .contact-us{
     padding-top: 4rem;
+    width: var(--width-65);
    }
   .d-flex{
     display: flex;
@@ -295,7 +297,8 @@ img{
 
   .questionbar input{
     border: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    background: transparent;
   }
 
   .search-location{
@@ -319,8 +322,8 @@ img{
     width: var(--width-100);
   }
   .phone img{
-    width: var(--width-50);
-    margin: 3em 7em;
+    width: var(--width-80);
+    margin: 2em 2em;
   }
   
   .btn-primary {
@@ -415,6 +418,12 @@ img{
     right: 2%;
     bottom: 10%;
   }
+  .help2{
+    position: absolute;
+    left: 100px;
+    bottom: 10%;
+  }
+  
   .form-section{
     background: var(--primary-col);
     color: var(--primary-white);
@@ -432,8 +441,17 @@ img{
     font-family: 'muli';
     margin-top: 1rem;
     margin-right: 1rem;
-    
+  }
 
+  .inYour-City{
+    width: 100%;
+    margin: 0 auto;
+    color: var(--primary-col);
+    background-color: #EEEEEE;
+  
+  }
+  .inYour-City img{
+    width: 100%;
   }
 
   .talk-to-sales{
@@ -510,7 +528,10 @@ img{
       margin-top: 1rem;
       margin-right: 1rem;
     }
-      
+    
+    .inYour-City h3{
+      font-size: 1.2rem;
+    }
   
     }
   

@@ -23,7 +23,7 @@ body{
   font-family: 'Nunito', sans-serif;
   font-family: 'Muli', sans-serif;
   /* background: url(../imgs/home-pg/); */
-  background-color: linear-gradient(blue, green, blue  );
+  /* background-color: linear-gradient(blue, green, blue ); */
   }
   
   html {
@@ -138,13 +138,18 @@ a {
   text-decoration: none;
 }
 .text-heading-one {
-  font-size:var(--large-font);
+  font-size:3rem;
   line-height: 1.2em;
 }
 p {
-  font-size:1.1rem;
+  font-size:1.2rem;
   line-height: 1.7rem;
-  margin:1.4rem 0
+  margin: 1.4rem 0;
+}
+.cta2 p{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  margin: 1.5rem 0;
 }
 /* .btn-primary {
   color: var(--primary-white);
@@ -225,7 +230,7 @@ li{
   background-size: cover;
   background-repeat: no repeat;
   text-align: center;
-  padding: 6.25rem 0;
+  padding: 5.25rem 0;
   color: var(--primary-white);
 }
 
@@ -471,7 +476,10 @@ input:focus{
   .side-nav-template4-re {
       display: block;
   }
-  
+  .w-phn{
+    width: 90%;
+    margin: 1rem auto;
+  }
 }
 
 @media (max-width: 900px) {
@@ -484,7 +492,6 @@ input:focus{
   }
   .flex {
       flex-wrap: wrap;
-      justify-content: space-between;
       gap: 2rem;
   }
   .three-equal-div {
@@ -513,6 +520,9 @@ input:focus{
   .margin-left {
       margin-left: 80%; 
   } 
+  .inYour-City h3{
+    font-size: 1.2rem;
+  }
 }
 @media (max-width:500px) {
   .side-nav-template4 {
@@ -520,6 +530,9 @@ input:focus{
   }
   .d-img {
       width: 100%;
+  }
+  .inYour-City h3{
+    font-size: 1.2rem;
   }
 
   .side-nav-template4-re {
