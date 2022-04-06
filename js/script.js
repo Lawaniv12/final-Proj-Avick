@@ -213,7 +213,7 @@ login.addEventListener('click', (e) => {
             let closeErr = document.querySelector('.error')
                 closeErr.style.backgroundColor="green"
                closeErr.style.display="block"
-                 errorP.innerHTML = "You will be redirect shortly"
+                 errorP.innerHTML = "You will be redirected shortly"
                setInterval(()=>{
                   window.location="Users-Admin/index.html"
                  }, 3000)
@@ -287,7 +287,7 @@ reg.addEventListener('click', (e)=> {
         let closeErr = document.querySelector('.error2')
         closeErr.style.backgroundColor="green"
         closeErr.style.display="block"
-             erro.innerHTML = "Reg successfull you will be redirect to login"
+             erro.innerHTML = "Your registration was successfull! Hang on, <br> you will be redirected to your login page"
              document.querySelector('#fname').value=""
              document.querySelector('#lname').value=""
 

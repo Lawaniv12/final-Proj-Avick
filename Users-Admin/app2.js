@@ -27,6 +27,7 @@ function initMap() {
         <div class="flex-space-between gap radius pd select-driver">
             <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">4km away</h4>
            <a href="tel:+2348164950695"> <button class="transact-btn green "> call </button></a>
+           <button class="transact-btn green" onclick="connect()"> Connect</button>
             <h4 class="flex">Ayock Bulus</h4>
         <img src="img/car (2).png" width="10%" alt="" srcset="">
         </div>
@@ -46,6 +47,7 @@ function initMap() {
         <div class="flex-space-between gap radius pd select-driver">
             <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">4km away</h4>
            <a href="tel:+2348164950695"> <button class="transact-btn green "> call </button></a>
+           <button class="transact-btn green" onclick="connect()"> Connect</button>
             <h4 class="flex">Babatunde Jousha</h4>
         <img src="img/car (2).png" width="10%" alt="" srcset="">
         </div>
@@ -67,6 +69,7 @@ function initMap() {
         <div class="flex-space-between gap radius pd select-driver">
             <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">4km away</h4>
            <a href="tel:+2348164950695"> <button class="transact-btn green "> call </button></a>
+           <button class="transact-btn green" onclick="connect()"> Connect</button>
             <h4 class="flex">Adroit</h4>
         <img src="img/car (2).png" width="10%" alt="" srcset="">
         </div>

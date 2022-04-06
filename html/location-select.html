@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Users-Admin/style.css">
+    <title>Avick</title>
+    <script>
+        // if(!sessionStorage.getItem('id')) {
+        //     window.location="../index.html"
+        // }
+        console.log(sessionStorage.getItem("id"))
+    </script>
+
+</head>
+<body>
+    <div class="header pd gap"> 
+        <div class="text-div ">
+            <p class="flex"><span class="font-size smallfont cursor mine">&#9776;</span> <span class="font-size smallfont cursor flex-2 gap"> Welcome <span class="show" id="riderName2"></span> </span> </p>
+                <span class="show text-center white-text"> <span class="flex white-text">Balance: &nbsp; $0.00</span></span>
+            </span>
+         </div>
+         
+         <div class="text-div ">
+            <input type="text" id ="search" placeholder="Your destination !">
+         </div>
+ 
+        <div class=" gap flex">
+            <img src="img/notification3.svg" alt="" srcset="">
+            <img src="img/Avatar.svg" width="50%" class="show" alt="" srcset="">
+        </div>
+    </div>
+    <div class="fullwidth">
+        
+        <div class="main pd full-height">
+          <div class="dashboard fullwidth pd relative radius mg margin-top-bottom">
+            <h4>Your Current Location</h4>
+            <div class="full-width gray margin-top-bottom radius" id="map">
+                <!-- ========Google Map is here Keep your code ==================== -->
+            </div>
+            <div class="">
+                <span><img src="../Users-Admin/img/Oval.svg" alt="" srcset="" class=""></span>
+                <input type="text"  placeholder="Your next destination" class="relative" id="location">
+                <button class="transact-btn con-center full-width orange white-text" id="changeLocation">Start</button>
+                
+            </div>
+            </div>
+        </div>
+            <!-- <div class="cardcontainer fullwidth mg">
+                <div class="fullwidth white radius relative blue-card">
+                    <div class="relative">
+                        <div class="bigDash relative">
+                            <span>23 Messages!</span>
+                        </div>
+                    </div>
+                    <div class="innercard flex-space-between fullwidth"> 
+                        <div class="halfwidth"><span class="smallfont">View Details</span></div>
+                        <div class="halfwidth left-align"><span class="smallfont bold"> > </span></div>
+                    </div>
+                </div>
+
+                <div class="fullwidth white radius relative orange">
+                    <div class="relative">
+                        <div class="bigDash relative">
+                            <span>11 New Tasks!</span>
+                        </div>
+                    </div>
+                    <div class="innercard flex-space-between fullwidth"> 
+                        <div class="halfwidth"><span class="smallfont">View Details</span></div>
+                        <div class="halfwidth left-align"><span class="smallfont bold"> > </span></div>
+                    </div>
+                </div>
+                  
+                <div class="fullwidth white radius relative green">
+                    <div class="relative">
+                        <div class="bigDash relative">
+                            <span>123 New Orders!</span>
+                        </div>
+                    </div>
+                    <div class="innercard flex-space-between fullwidth"> 
+                        <div class="halfwidth"><span class="smallfont">View Details</span></div>
+                        <div class="halfwidth left-align"><span class="smallfont bold"> > </span></div>
+                    </div>
+                </div>
+                
+                <div class="fullwidth white radius relative red">
+                    <div class="relative">
+                        <div class="bigDash relative">
+                            <span>23 New Tricks !</span>
+                        </div>
+                    </div>
+                    <div class="innercard flex-space-between fullwidth"> 
+                        <div class="halfwidth"><span class="smallfont">View Details</span></div>
+                        <div class="halfwidth left-align"><span class="smallfont bold"> > </span></div>
+                    </div>
+                </div>
+
+            </div> -->
+
+            <!-- <div class="dashboard fullwidth pd relative height radius mg">
+                <div class="top fullwidth "> <span class="smallfont white-text"> Your Current Location</span></div>
+                <div class="full-width " id="">
+                    Hello 
+                </div>
+                <div class="bottom fullwidth"><span class="smallfont white-text"> Updated yesterday at 8:30pm</span></div>
+            </div>
+
+            <div class="dashboard fullwidth pd relative height radiusmg">
+                <div class="top fullwidth "> <span class="smallfont white-text"> Table</span></div>
+                <div class="bottom fullwidth"><span class="smallfont white-text"> Updated yesterday at 8:30pm</span></div>
+            </div>
+
+            <div class="footer fullwidth pd">
+                <span class="center-align smallfont">Alright reserved Copyright &copy; 2022</span>
+            </div> -->
+        </div>
+    </div>
+ 
+  <!-- <script>
+          $('#location-button').click(function(){
+        
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position){
+                  console.log(position);
+                  $.get( "http://maps.googleapis.com/maps/api/geocode/json?latlng="+ position.coords.latitude + "," + position.coords.longitude +"&sensor=false", function(data) {
+                    console.log(data);
+                  })
+                  var img = new Image();
+                  img.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + position.coords.latitude + "," + position.coords.longitude + "&zoom=13&size=800x400&sensor=false";
+                  $('#output').html(img);
+                });
+                
+            }
+
+          });
+  </script> -->
+    <script src="../Users-Admin/script.js" type=""></script>
+    <script src="../js/l-script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcDZBLLF3v-pRgRw-zm7JvON-F4xVAk5s&callback=initMap"></script>
+
+</body>
+</html>
