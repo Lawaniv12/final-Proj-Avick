@@ -28,8 +28,8 @@ function initMap() {
             <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">4km away</h4>
            <a href="tel:+2348164950695"> <button class="transact-btn green "> call </button></a>
            <button class="transact-btn green" onclick="connect()"> Connect</button>
-            <h4 class="flex">Ayock Bulus</h4>
-        <img src="img/car (2).png" width="10%" alt="" srcset="">
+            <h4 class="flex">Ayock Anna</h4>
+        <img src="img/ann.jpeg" width="10%" alt="" srcset="">
         </div>
     </a>`
     })
@@ -48,8 +48,8 @@ function initMap() {
             <h4 class="flex"><img src="img/Oval.svg" alt="" srcset="">4km away</h4>
            <a href="tel:+2348164950695"> <button class="transact-btn green "> call </button></a>
            <button class="transact-btn green" onclick="connect()"> Connect</button>
-            <h4 class="flex">Babatunde Jousha</h4>
-        <img src="img/car (2).png" width="10%" alt="" srcset="">
+            <h4 class="flex">Babatunde Abimbola</h4>
+        <img src="img/abim.jpeg" width="10%" alt="" srcset="">
         </div>
         </a>`
     })
@@ -71,7 +71,7 @@ function initMap() {
            <a href="tel:+2348164950695"> <button class="transact-btn green "> call </button></a>
            <button class="transact-btn green" onclick="connect()"> Connect</button>
             <h4 class="flex">Adroit</h4>
-        <img src="img/car (2).png" width="10%" alt="" srcset="">
+        <img src="img/adroit.jpg" width="10%" alt="" srcset="">
         </div>
          </a>`
     })

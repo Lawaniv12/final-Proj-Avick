@@ -42,10 +42,13 @@ function popUp() {
     }
     arr.push(data)
     localStorage.setItem("wallet", JSON.stringify(arr))
+    setInterval()
+    window.location="index.html"
 }
 
 // getting all items from sessions and setting all settion items to a login profile and value 
 let userId = localStorage.getItem("id")
+
 console.log(userId)
 window.onload = function () {
 
